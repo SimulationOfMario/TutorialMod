@@ -2,7 +2,9 @@ package net.silentautopsy.tutorialmod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.silentautopsy.tutorialmod.block.ModBlocks;
+import net.silentautopsy.tutorialmod.item.ModFuels;
 import net.silentautopsy.tutorialmod.item.ModItemGroups;
 import net.silentautopsy.tutorialmod.item.ModItems;
 import org.slf4j.Logger;
@@ -19,5 +21,6 @@ public class TutorialMod implements ModInitializer
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModFuels.registerFuels();
 	}
 }
