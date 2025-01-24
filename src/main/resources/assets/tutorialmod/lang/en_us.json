@@ -1,7 +1,9 @@
 {
   "item.tutorialmod.ruby": "Ruby",
   "item.tutorialmod.raw_ruby": "Raw Ruby",
+
   "item.tutorialmod.metal_detector": "Metal Detector",
+  "tooltip.tutorialmod.metal_detector.tooltip": "Finds valuables underground",
 
   "block.tutorialmod.ruby_block": "Ruby Block",
   "block.tutorialmod.raw_ruby_block": "Raw Ruby Block",
@@ -16,6 +18,8 @@
   "item.tutorialmod.tomato": "Tomato",
 
   "item.tutorialmod.coal_briquette": "Coal Briquette",
+
+
 
   "itemgroup.ruby": "Ruby Tutorial Group"
 }
