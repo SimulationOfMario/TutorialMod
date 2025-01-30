@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "multi_bench",
+  "ingredients": [
+    {
+      "item": "tutorialmod:ruby"
+    }
+  ],
+  "result": {
+    "item": "tutorialmod:ruby_button"
+  }
+}

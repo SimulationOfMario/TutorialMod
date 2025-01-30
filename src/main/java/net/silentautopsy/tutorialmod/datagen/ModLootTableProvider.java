@@ -35,6 +35,17 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider
         addDrop(ModBlocks.NETHER_RUBY_ORE, rubyOreDrops(ModBlocks.NETHER_RUBY_ORE, ModItems.RAW_RUBY, 2.0F, 5.0F));
         addDrop(ModBlocks.END_STONE_RUBY_ORE, rubyOreDrops(ModBlocks.END_STONE_RUBY_ORE, ModItems.RAW_RUBY, 4.0F, 8.0F));
 
+        addDrop(ModBlocks.RUBY_STAIRS);
+        addDrop(ModBlocks.RUBY_WALL);
+        addDrop(ModBlocks.RUBY_FENCE);
+        addDrop(ModBlocks.RUBY_FENCE_GATE);
+        addDrop(ModBlocks.RUBY_BUTTON);
+        addDrop(ModBlocks.RUBY_PRESSURE_PLATE);
+        addDrop(ModBlocks.RUBY_TRAPDOOR);
+
+        addDrop(ModBlocks.RUBY_DOOR, doorDrops(ModBlocks.RUBY_DOOR));
+        addDrop(ModBlocks.RUBY_SLAB, slabDrops(ModBlocks.RUBY_SLAB));
+
     }
 
     public LootTable.Builder rubyOreDrops(Block drop, Item item, float min, float max)
