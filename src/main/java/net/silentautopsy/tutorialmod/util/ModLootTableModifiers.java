@@ -10,6 +10,7 @@ import net.minecraft.loot.function.SetCountLootFunction;
 import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
 import net.minecraft.util.Identifier;
+import net.silentautopsy.tutorialmod.TutorialMod;
 import net.silentautopsy.tutorialmod.item.ModItems;
 
 import java.util.ArrayList;
@@ -24,6 +25,8 @@ public class ModLootTableModifiers
 
     public static void modifyLootTables()
     {
+        TutorialMod.LOGGER.info("Modifying Loot Tables for " + TutorialMod.MOD_ID);
+
         LootTableEvents.MODIFY.register((resourceManager, lootManager, id, tableBuilder, source) -> {
 
             if(JUNGLE_TEMPLE_ID.equals(id))

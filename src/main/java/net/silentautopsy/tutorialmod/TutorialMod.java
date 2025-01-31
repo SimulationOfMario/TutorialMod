@@ -6,6 +6,7 @@ import net.silentautopsy.tutorialmod.block.ModBlocks;
 import net.silentautopsy.tutorialmod.item.ModFuels;
 import net.silentautopsy.tutorialmod.item.ModItemGroups;
 import net.silentautopsy.tutorialmod.item.ModItems;
+import net.silentautopsy.tutorialmod.util.ModCustomTrades;
 import net.silentautopsy.tutorialmod.util.ModLootTableModifiers;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -23,5 +24,6 @@ public class TutorialMod implements ModInitializer
 		ModBlocks.registerModBlocks();
 		ModFuels.registerFuels();
 		ModLootTableModifiers.modifyLootTables();
+		ModCustomTrades.registerCustomTrades();
 	}
 }
