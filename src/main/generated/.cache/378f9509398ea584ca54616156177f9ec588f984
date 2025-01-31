@@ -1,4 +1,4 @@
-// 1.20.1	2025-01-31T16:34:54.9460331	Tutorial Mod/Block Loot Tables
+// 1.20.1	2025-01-31T16:51:40.0994601	Tutorial Mod/Block Loot Tables
 d335d1581e2acd1b2179f84a884643db4c61a07e data\tutorialmod\loot_tables\blocks\ruby_pressure_plate.json
 4f767a7637e8a06ab8dc288b173877b52afc87f4 data\tutorialmod\loot_tables\blocks\ruby_button.json
 151033a87d075f2c781260a9d2f09b838137413f data\tutorialmod\loot_tables\blocks\tomato_crop.json
@@ -6,8 +6,10 @@ d335d1581e2acd1b2179f84a884643db4c61a07e data\tutorialmod\loot_tables\blocks\rub
 7aa7decec75c884a168a193b073d9dbce7e37408 data\tutorialmod\loot_tables\blocks\ruby_trapdoor.json
 4bf0bfaf4e6545bdaa95f0e9a62a72e5b62bb9d0 data\tutorialmod\loot_tables\blocks\ruby_stairs.json
 3f950c6a949fc7757f6ee79a0dc95e652cf721fa data\tutorialmod\loot_tables\blocks\ruby_ore.json
-865399c15f94da491a91fa8bc983868706016198 data\tutorialmod\loot_tables\blocks\ruby_wall.json
 178a29f446cd7ce8ca32f37371622aed06467afe data\tutorialmod\loot_tables\blocks\corn_crop.json
+865399c15f94da491a91fa8bc983868706016198 data\tutorialmod\loot_tables\blocks\ruby_wall.json
+681956b5e18f7d1d59f004198e5b9ad0c12192e3 data\tutorialmod\loot_tables\blocks\potted_dahlia.json
+62b525cc60879fed99f9e678c1a93d25c0d3bdad data\tutorialmod\loot_tables\blocks\dahlia.json
 8fb6c58892093a4f3b3cfb425b862efcdedcc873 data\tutorialmod\loot_tables\blocks\nether_ruby_ore.json
 a77a150c7851fbaf830081a89b0e3371ad62225d data\tutorialmod\loot_tables\blocks\ruby_fence_gate.json
 8621855b5bd4597ba917e5cecdb1933a1f38d4c0 data\tutorialmod\loot_tables\blocks\deepslate_ruby_ore.json

@@ -32,6 +32,8 @@
   "item.tutorialmod.corn": "Corn",
   "item.tutorialmod.corn_seeds": "Corn Seeds",
 
+  "block.tutorialmod.dahlia": "Dahlia",
+
   "item.tutorialmod.coal_briquette": "Coal Briquette",
 
   "block.tutorialmod.ruby_stairs": "Ruby Stairs",
@@ -44,5 +46,5 @@
   "block.tutorialmod.ruby_door": "Ruby Door",
   "block.tutorialmod.ruby_trapdoor": "Ruby Trapdoor",
 
-  "itemgroup.ruby": "Ruby Tutorial Group"
+  "itemgroup.ruby": "Tutorial Mod"
 }
