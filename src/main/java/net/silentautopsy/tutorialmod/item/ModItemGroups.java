@@ -59,6 +59,7 @@ public class ModItemGroups
                             entries.add(ModBlocks.RUBY_PRESSURE_PLATE);
 
                             entries.add(ModItems.TOMATO);
+                            entries.add(ModItems.TOMATO_SEEDS);
                             entries.add(ModItems.COAL_BRIQUETTE);
                         }
                     ).build()

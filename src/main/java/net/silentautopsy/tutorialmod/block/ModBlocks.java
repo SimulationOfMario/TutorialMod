@@ -12,6 +12,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.silentautopsy.tutorialmod.TutorialMod;
 import net.silentautopsy.tutorialmod.block.custom.SoundBlock;
+import net.silentautopsy.tutorialmod.block.custom.TomatoCropBlock;
 
 public class ModBlocks
 {
@@ -71,5 +72,7 @@ public class ModBlocks
     public static final Block RUBY_TRAPDOOR = registerBlock("ruby_trapdoor",
             new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).nonOpaque(), BlockSetType.IRON));
 
+    public static final Block TOMATO_CROP = registerBlock("tomato_crop",
+            new TomatoCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
 
 }

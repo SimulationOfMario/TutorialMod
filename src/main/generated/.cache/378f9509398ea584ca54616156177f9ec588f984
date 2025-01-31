@@ -1,6 +1,7 @@
-// 1.20.1	2025-01-31T13:14:41.8773998	Tutorial Mod/Block Loot Tables
+// 1.20.1	2025-01-31T15:20:34.5369826	Tutorial Mod/Block Loot Tables
 d335d1581e2acd1b2179f84a884643db4c61a07e data\tutorialmod\loot_tables\blocks\ruby_pressure_plate.json
 4f767a7637e8a06ab8dc288b173877b52afc87f4 data\tutorialmod\loot_tables\blocks\ruby_button.json
+151033a87d075f2c781260a9d2f09b838137413f data\tutorialmod\loot_tables\blocks\tomato_crop.json
 10efab6566ae1503d35bf6302a55b1e7203fa2e6 data\tutorialmod\loot_tables\blocks\ruby_fence.json
 7aa7decec75c884a168a193b073d9dbce7e37408 data\tutorialmod\loot_tables\blocks\ruby_trapdoor.json
 4bf0bfaf4e6545bdaa95f0e9a62a72e5b62bb9d0 data\tutorialmod\loot_tables\blocks\ruby_stairs.json
