@@ -5,6 +5,8 @@
   "item.tutorialmod.metal_detector": "Metal Detector",
   "tooltip.tutorialmod.metal_detector.tooltip": "Finds valuables underground",
 
+  "item.tutorialmod.ruby_staff": "Ruby Staff",
+
   "block.tutorialmod.ruby_block": "Ruby Block",
   "block.tutorialmod.raw_ruby_block": "Raw Ruby Block",
 
