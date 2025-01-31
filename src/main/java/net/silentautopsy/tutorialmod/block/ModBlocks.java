@@ -11,6 +11,7 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.silentautopsy.tutorialmod.TutorialMod;
+import net.silentautopsy.tutorialmod.block.custom.CornCropBlock;
 import net.silentautopsy.tutorialmod.block.custom.SoundBlock;
 import net.silentautopsy.tutorialmod.block.custom.TomatoCropBlock;
 
@@ -74,5 +75,7 @@ public class ModBlocks
 
     public static final Block TOMATO_CROP = registerBlock("tomato_crop",
             new TomatoCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
+    public static final Block CORN_CROP = registerBlock("corn_crop",
+            new CornCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
 
 }

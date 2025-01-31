@@ -7,6 +7,7 @@ import net.minecraft.data.server.loottable.BlockLootTableGenerator;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.Item;
 import net.minecraft.loot.LootTable;
+import net.minecraft.loot.condition.AnyOfLootCondition;
 import net.minecraft.loot.condition.BlockStatePropertyLootCondition;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.entry.LeafEntry;
@@ -16,6 +17,7 @@ import net.minecraft.loot.function.SetCountLootFunction;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
 import net.minecraft.predicate.StatePredicate;
 import net.silentautopsy.tutorialmod.block.ModBlocks;
+import net.silentautopsy.tutorialmod.block.custom.CornCropBlock;
 import net.silentautopsy.tutorialmod.block.custom.TomatoCropBlock;
 import net.silentautopsy.tutorialmod.item.ModItems;
 
@@ -54,6 +56,20 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider
                         .exactMatch(TomatoCropBlock.AGE, 5)
                 );
         addDrop(ModBlocks.TOMATO_CROP, cropDrops(ModBlocks.TOMATO_CROP, ModItems.TOMATO, ModItems.TOMATO_SEEDS, builder));
+
+        AnyOfLootCondition.Builder builder2 =
+                BlockStatePropertyLootCondition.builder(ModBlocks.CORN_CROP)
+                    .properties(StatePredicate.Builder.create()
+                            .exactMatch(CornCropBlock.AGE, 7)
+                    )
+                .or(BlockStatePropertyLootCondition.builder(ModBlocks.CORN_CROP)
+                    .properties(StatePredicate.Builder.create()
+                            .exactMatch(CornCropBlock.AGE, 8)
+                    )
+                );
+        addDrop(ModBlocks.CORN_CROP, cropDrops(ModBlocks.CORN_CROP, ModItems.CORN, ModItems.CORN_SEEDS, builder2));
+
+
     }
 
     public LootTable.Builder rubyOreDrops(Block drop, Item item, float min, float max)

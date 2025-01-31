@@ -28,7 +28,9 @@
   "block.tutorialmod.sound_block": "Sound Block",
 
   "item.tutorialmod.tomato": "Tomato",
-  "item.tutorialmod.tomato_seeds": "Tomato Seeds",
+  "item.tutorialmod.tomato_seeds": "Tomato ",
+  "item.tutorialmod.corn": "Corn",
+  "item.tutorialmod.corn_seeds": "Corn Seeds",
 
   "item.tutorialmod.coal_briquette": "Coal Briquette",
 
