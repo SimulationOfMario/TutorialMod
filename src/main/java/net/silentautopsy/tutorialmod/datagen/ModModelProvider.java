@@ -4,12 +4,16 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
+import net.minecraft.data.client.Model;
 import net.minecraft.data.client.Models;
 import net.minecraft.item.ArmorItem;
+import net.minecraft.util.Identifier;
 import net.silentautopsy.tutorialmod.block.ModBlocks;
 import net.silentautopsy.tutorialmod.block.custom.CornCropBlock;
 import net.silentautopsy.tutorialmod.block.custom.TomatoCropBlock;
 import net.silentautopsy.tutorialmod.item.ModItems;
+
+import java.util.Optional;
 
 public class ModModelProvider extends FabricModelProvider
 {
@@ -71,5 +75,7 @@ public class ModModelProvider extends FabricModelProvider
         itemModelGenerator.registerArmor((ArmorItem) ModItems.RUBY_CHESTPLATE);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.RUBY_LEGGINGS);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.RUBY_BOOTS);
+
+        itemModelGenerator.register(ModItems.PORCUPINE_SPAWN_EGG, new Model(Optional.of(new Identifier("item/template_spawn_egg")), Optional.empty()));
     }
 }

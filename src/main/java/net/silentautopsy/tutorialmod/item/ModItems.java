@@ -9,6 +9,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.silentautopsy.tutorialmod.TutorialMod;
 import net.silentautopsy.tutorialmod.block.ModBlocks;
+import net.silentautopsy.tutorialmod.entity.ModEntities;
 import net.silentautopsy.tutorialmod.item.custom.MetalDetectorItem;
 import net.silentautopsy.tutorialmod.item.custom.ModArmorItem;
 import net.silentautopsy.tutorialmod.sound.ModSounds;
@@ -21,6 +22,7 @@ public class ModItems
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToIngredientItemGroup);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(ModItems::addItemsToToolsItemGroup);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(ModItems::addItemsToFoodAndDrinkItemGroup);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.SPAWN_EGGS).register(ModItems::addItemsToSpawnEggsItemGroup);
     }
 
     private static Item registerItem(String name, Item item)
@@ -42,6 +44,11 @@ public class ModItems
     private static void addItemsToFoodAndDrinkItemGroup(FabricItemGroupEntries entries)
     {
         entries.add(TOMATO);
+    }
+
+    private static void addItemsToSpawnEggsItemGroup(FabricItemGroupEntries entries)
+    {
+        entries.add(PORCUPINE_SPAWN_EGG);
     }
 
     public static final Item RUBY = registerItem("ruby", new Item(new FabricItemSettings()));
@@ -69,4 +76,5 @@ public class ModItems
 
     public static final Item BAR_BRAWL_MUSIC_DISC = registerItem("bar_brawl_music_disc", new MusicDiscItem(7, ModSounds.BAR_BRAWL, new FabricItemSettings().maxCount(1), 122));
 
+    public static final Item PORCUPINE_SPAWN_EGG = registerItem("porcupine_spawn_egg", new SpawnEggItem(ModEntities.PORCUPINE, 0xa86518, 0x3b260f, new FabricItemSettings()));
 }

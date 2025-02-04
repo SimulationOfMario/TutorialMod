@@ -3,6 +3,7 @@ package net.silentautopsy.tutorialmod;
 import net.fabricmc.api.ModInitializer;
 
 import net.silentautopsy.tutorialmod.block.ModBlocks;
+import net.silentautopsy.tutorialmod.entity.ModEntities;
 import net.silentautopsy.tutorialmod.item.ModFuels;
 import net.silentautopsy.tutorialmod.item.ModItemGroups;
 import net.silentautopsy.tutorialmod.item.ModItems;
@@ -29,5 +30,6 @@ public class TutorialMod implements ModInitializer
 		ModCustomTrades.registerCustomTrades();
 		ModVillagers.registerVillagers();
 		ModSounds.registerSounds();
+		ModEntities.registerEntities();
 	}
 }

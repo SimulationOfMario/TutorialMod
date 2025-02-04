@@ -53,5 +53,8 @@
 
   "entity.minecraft.villager.sound_master": "Sound Master",
 
-  "sounds.tutorialmod.metal_detector_found_ore": "Metal Detector Found Ore Sound"
+  "sounds.tutorialmod.metal_detector_found_ore": "Metal Detector Found Ore Sound",
+
+  "item.tutorialmod.porcupine_spawn_egg": "Porcupine Spawn Egg",
+  "entity.tutorialmod.porcupine": "Porcupine"
 }

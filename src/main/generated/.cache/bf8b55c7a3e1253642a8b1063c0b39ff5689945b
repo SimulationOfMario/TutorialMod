@@ -1,4 +1,4 @@
-// 1.20.1	2025-02-04T13:06:34.9237756	Tutorial Mod/Model Definitions
+// 1.20.1	2025-02-04T14:58:59.3284048	Tutorial Mod/Model Definitions
 430890fbcf2db7c6b7b703b18ca062d9b174ed64 assets\tutorialmod\models\item\coal_briquette.json
 cc64d3cc92773f7cc42627d2ed90a5783dd15824 assets\tutorialmod\models\block\corn_crop_stage2.json
 1cac72dfcf0953756533a59048855cf9639b0f27 assets\tutorialmod\models\block\ruby_button_pressed.json
@@ -34,6 +34,7 @@ a743381d7382b871f961ede3637b21dd7322ef0d assets\tutorialmod\models\item\tomato.j
 9bf4ea21309275e6ea9d5ed43210dd380deb8ff6 assets\tutorialmod\models\item\ruby_shovel.json
 ab6d5bb86c6522fa3c42035f2a988d0cad069186 assets\tutorialmod\blockstates\ruby_door.json
 c814633148ab07a7934cdcd61f8a0792607a45b4 assets\tutorialmod\models\block\ruby_pressure_plate_down.json
+63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets\tutorialmod\models\item\porcupine_spawn_egg.json
 53288064df825d8f04020c289a0136be9f955618 assets\tutorialmod\models\block\corn_crop_stage5.json
 86c7c307167b5a0efe2175235a7fa584d4523ac3 assets\tutorialmod\blockstates\raw_ruby_block.json
 4f62156aad90a7d3e1ba601f1a027655c90ddfbd assets\tutorialmod\models\item\ruby_boots_gold_trim.json
@@ -87,8 +88,8 @@ df604a5827474a72c44e4b635f6e236bec0efdbf assets\tutorialmod\models\item\ruby_che
 a3afdbdc2d5bc2b6615dfde9596d1eeeb3dc4564 assets\tutorialmod\models\item\ruby_block.json
 28926c3209b0de80a200bb5e076fa2f060c1dc50 assets\tutorialmod\models\item\ruby_trapdoor.json
 8919d96c2b64e46c6045926e1b7452e940a00ea6 assets\tutorialmod\blockstates\potted_dahlia.json
-e647306ee173279d775cd03602e3da30b8191c17 assets\tutorialmod\models\block\potted_dahlia.json
 d863311e2c5d47b9536ef991492951aae4626dd1 assets\tutorialmod\models\block\tomato_crop_stage1.json
+e647306ee173279d775cd03602e3da30b8191c17 assets\tutorialmod\models\block\potted_dahlia.json
 77d1255940a4af09a490e2e965a2abf8b5598824 assets\tutorialmod\models\block\ruby_door_top_right_open.json
 64a10961286e5580fc005404c650f326fd5b061d assets\tutorialmod\blockstates\dahlia.json
 120edcd9284eafa1821e839929f55e2f62e0999b assets\tutorialmod\models\block\ruby_wall_post.json
@@ -125,8 +126,8 @@ e93e5d2c8c8e036c7383d253b6ed71d3f3cc7baa assets\tutorialmod\models\block\nether_
 86aaf9119cc428addf0d0ae8829aa0e0630f8c3e assets\tutorialmod\models\block\tomato_crop_stage5.json
 dd8175fa12280ab5f11423a30ce62f43befa9a1d assets\tutorialmod\models\item\raw_ruby.json
 eda40d759fe364655011dcece6a5e8d31d2360bb assets\tutorialmod\models\block\ruby_fence_gate_wall_open.json
-9c6e7b2abd59c5a64086be3d9bac690ba7c1f210 assets\tutorialmod\models\item\ruby_leggings_copper_trim.json
 5bf98fb36ec60875d15001dc811ad89892306bfe assets\tutorialmod\models\block\ruby_door_bottom_right_open.json
+9c6e7b2abd59c5a64086be3d9bac690ba7c1f210 assets\tutorialmod\models\item\ruby_leggings_copper_trim.json
 eaa086e1e5925260a7f03536f97f291f57135a23 assets\tutorialmod\models\item\ruby_wall.json
 a31d254244420e3751599cfbc5304a9779c2e843 assets\tutorialmod\blockstates\corn_crop.json
 9b062c50679acb96ed97c1ecdc1f6e85a7cdedd7 assets\tutorialmod\models\block\raw_ruby_block.json

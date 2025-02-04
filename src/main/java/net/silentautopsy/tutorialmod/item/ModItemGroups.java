@@ -67,6 +67,8 @@ public class ModItemGroups
                             entries.add(ModBlocks.DAHLIA);
 
                             entries.add(ModItems.BAR_BRAWL_MUSIC_DISC);
+
+                            entries.add(ModItems.PORCUPINE_SPAWN_EGG);
                         }
                     ).build()
             );
