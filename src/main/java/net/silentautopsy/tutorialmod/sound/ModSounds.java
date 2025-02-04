@@ -29,4 +29,6 @@ public class ModSounds
     public static final SoundEvent SOUND_BLOCK_FALL = registerSoundEvent("sound_block_fall");
     public static final BlockSoundGroup SOUND_BLOCK_SOUNDS = new BlockSoundGroup(1f, 1f,
             ModSounds.SOUND_BLOCK_BREAK, ModSounds.SOUND_BLOCK_STEP, ModSounds.SOUND_BLOCK_PLACE, ModSounds.SOUND_BLOCK_HIT, ModSounds.SOUND_BLOCK_FALL);
+
+    public static final SoundEvent BAR_BRAWL = registerSoundEvent("bar_brawl");
 }

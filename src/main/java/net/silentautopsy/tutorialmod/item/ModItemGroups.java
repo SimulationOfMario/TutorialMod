@@ -65,6 +65,8 @@ public class ModItemGroups
                             entries.add(ModItems.CORN_SEEDS);
 
                             entries.add(ModBlocks.DAHLIA);
+
+                            entries.add(ModItems.BAR_BRAWL_MUSIC_DISC);
                         }
                     ).build()
             );

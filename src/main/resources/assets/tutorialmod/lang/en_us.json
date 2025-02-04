@@ -36,6 +36,9 @@
 
   "item.tutorialmod.coal_briquette": "Coal Briquette",
 
+  "item.tutorialmod.bar_brawl_music_disc": "Bar Brawl music Disc",
+  "item.tutorialmod.bar_brawl_music_disc.desc": "Bryan Tech - Bar Brawl (CC0)",
+
   "block.tutorialmod.ruby_stairs": "Ruby Stairs",
   "block.tutorialmod.ruby_slab": "Ruby Slab",
   "block.tutorialmod.ruby_button": "Ruby Button",

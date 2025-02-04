@@ -11,6 +11,7 @@ import net.silentautopsy.tutorialmod.TutorialMod;
 import net.silentautopsy.tutorialmod.block.ModBlocks;
 import net.silentautopsy.tutorialmod.item.custom.MetalDetectorItem;
 import net.silentautopsy.tutorialmod.item.custom.ModArmorItem;
+import net.silentautopsy.tutorialmod.sound.ModSounds;
 
 public class ModItems
 {
@@ -65,5 +66,7 @@ public class ModItems
     public static final Item RUBY_CHESTPLATE = registerItem("ruby_chestplate", new ArmorItem(ModArmorMaterials.RUBY, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
     public static final Item RUBY_LEGGINGS = registerItem("ruby_leggings", new ArmorItem(ModArmorMaterials.RUBY, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
     public static final Item RUBY_BOOTS = registerItem("ruby_boots", new ArmorItem(ModArmorMaterials.RUBY, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+
+    public static final Item BAR_BRAWL_MUSIC_DISC = registerItem("bar_brawl_music_disc", new MusicDiscItem(7, ModSounds.BAR_BRAWL, new FabricItemSettings().maxCount(1), 122));
 
 }
