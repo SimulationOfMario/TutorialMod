@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "tutorialmod:sound_poi",
+      "required": false
+    }
+  ]
+}

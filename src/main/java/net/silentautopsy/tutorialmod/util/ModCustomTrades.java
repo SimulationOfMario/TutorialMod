@@ -9,7 +9,9 @@ import net.minecraft.item.Items;
 import net.minecraft.village.TradeOffer;
 import net.minecraft.village.VillagerProfession;
 import net.silentautopsy.tutorialmod.TutorialMod;
+import net.silentautopsy.tutorialmod.block.ModBlocks;
 import net.silentautopsy.tutorialmod.item.ModItems;
+import net.silentautopsy.tutorialmod.villager.ModVillagers;
 
 public class ModCustomTrades
 {
@@ -60,6 +62,26 @@ public class ModCustomTrades
                     new ItemStack(ModItems.RAW_RUBY, 16),
                     new ItemStack(ModItems.METAL_DETECTOR, 1),
                     1, 12, 0.09f)
+            ));
+
+        });
+
+        TradeOfferHelper.registerVillagerOffers(ModVillagers.SOUND_MASTER, 1, factories -> {
+
+            factories.add(((entity, random) -> new TradeOffer(
+                    new ItemStack(ModItems.RUBY, 32),
+                    new ItemStack(ModBlocks.SOUND_BLOCK, 2),
+                    3, 10, 0.09f)
+            ));
+
+        });
+
+        TradeOfferHelper.registerVillagerOffers(ModVillagers.SOUND_MASTER, 2, factories -> {
+
+            factories.add(((entity, random) -> new TradeOffer(
+                    new ItemStack(ModBlocks.SOUND_BLOCK, 5),
+                    new ItemStack(ModItems.RUBY_CHESTPLATE, 1),
+                    3, 10, 0.09f)
             ));
 
         });

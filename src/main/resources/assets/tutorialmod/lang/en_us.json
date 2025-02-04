@@ -46,5 +46,7 @@
   "block.tutorialmod.ruby_door": "Ruby Door",
   "block.tutorialmod.ruby_trapdoor": "Ruby Trapdoor",
 
-  "itemgroup.ruby": "Tutorial Mod"
+  "itemgroup.ruby": "Tutorial Mod",
+
+  "entity.minecraft.villager.sound_master": "Sound Master"
 }
