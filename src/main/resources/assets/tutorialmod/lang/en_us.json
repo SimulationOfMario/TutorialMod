@@ -48,5 +48,7 @@
 
   "itemgroup.ruby": "Tutorial Mod",
 
-  "entity.minecraft.villager.sound_master": "Sound Master"
+  "entity.minecraft.villager.sound_master": "Sound Master",
+
+  "sounds.tutorialmod.metal_detector_found_ore": "Metal Detector Found Ore Sound"
 }

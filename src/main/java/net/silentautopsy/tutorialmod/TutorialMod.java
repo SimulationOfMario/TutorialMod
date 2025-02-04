@@ -6,6 +6,7 @@ import net.silentautopsy.tutorialmod.block.ModBlocks;
 import net.silentautopsy.tutorialmod.item.ModFuels;
 import net.silentautopsy.tutorialmod.item.ModItemGroups;
 import net.silentautopsy.tutorialmod.item.ModItems;
+import net.silentautopsy.tutorialmod.sound.ModSounds;
 import net.silentautopsy.tutorialmod.util.ModCustomTrades;
 import net.silentautopsy.tutorialmod.util.ModLootTableModifiers;
 import net.silentautopsy.tutorialmod.villager.ModVillagers;
@@ -27,5 +28,6 @@ public class TutorialMod implements ModInitializer
 		ModLootTableModifiers.modifyLootTables();
 		ModCustomTrades.registerCustomTrades();
 		ModVillagers.registerVillagers();
+		ModSounds.registerSounds();
 	}
 }
