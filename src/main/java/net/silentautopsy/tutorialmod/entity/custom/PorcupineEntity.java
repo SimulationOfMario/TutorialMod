@@ -8,6 +8,9 @@ import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttribute;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.damage.DamageSource;
+import net.minecraft.entity.data.DataTracker;
+import net.minecraft.entity.data.TrackedData;
+import net.minecraft.entity.data.TrackedDataHandlerRegistry;
 import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.entity.passive.AnimalEntity;
 import net.minecraft.entity.passive.PassiveEntity;
@@ -20,6 +23,7 @@ import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.world.World;
 import net.silentautopsy.tutorialmod.entity.ModEntities;
+import net.silentautopsy.tutorialmod.entity.ai.PorcupineAttackGoal;
 import org.jetbrains.annotations.Nullable;
 
 public class PorcupineEntity extends AnimalEntity
@@ -50,6 +54,8 @@ public class PorcupineEntity extends AnimalEntity
     {
         // Add the swim goal for not drowning
         this.goalSelector.add(0, new SwimGoal(this));
+        // Attack
+        this.goalSelector.add(1, new PorcupineAttackGoal(this, 1D, true));
         // Find a mate when breeding
         this.goalSelector.add(1, new AnimalMateGoal(this, 1.15D));
         // Follow the player when holding beetroot
@@ -62,6 +68,9 @@ public class PorcupineEntity extends AnimalEntity
         this.goalSelector.add(5, new LookAtEntityGoal(this, PlayerEntity.class, 4f));
         // Look around
         this.goalSelector.add(6, new LookAroundGoal(this));
+
+        // Attack an entity when attacked by it
+        this.targetSelector.add(1, new RevengeGoal(this));
     }
 
     @Override
@@ -91,6 +100,9 @@ public class PorcupineEntity extends AnimalEntity
     public final AnimationState idleAnimationState = new AnimationState();
     private int idleAnimationTimeout = 0;
 
+    public final AnimationState attackAnimationState = new AnimationState();
+    public int attackAnimationTimeout = 0;
+
     @Override
     protected void updateLimbs(float posDelta)
     {
@@ -119,5 +131,43 @@ public class PorcupineEntity extends AnimalEntity
         {
             --this.idleAnimationTimeout;
         }
+
+        if(this.isAttacking() && attackAnimationTimeout <= 0)
+        {
+            this.attackAnimationTimeout = 40;
+            this.attackAnimationState.start(this.age);
+        }
+        else
+        {
+            --this.attackAnimationTimeout;
+        }
+
+        if(!this.isAttacking())
+        {
+            this.attackAnimationState.stop();
+        }
+
+
+    }
+
+    @Override
+    protected void initDataTracker()
+    {
+        super.initDataTracker();
+        this.dataTracker.startTracking(ATTACKING, false);
+    }
+
+    private static final TrackedData<Boolean> ATTACKING = DataTracker.registerData(PorcupineEntity.class, TrackedDataHandlerRegistry.BOOLEAN);
+
+    @Override
+    public void setAttacking(boolean attacking)
+    {
+        this.dataTracker.set(ATTACKING, attacking);
+    }
+
+    @Override
+    public boolean isAttacking()
+    {
+        return this.dataTracker.get(ATTACKING);
     }
 }
